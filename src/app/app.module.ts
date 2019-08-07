@@ -1,27 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {InputTextModule} from 'primeng/components/inputtext/inputtext';
+import {FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
-import {ButtonModule} from 'primeng/components/button/button';
-import {TableModule} from 'primeng/components/table/table';
-import {TooltipModule} from 'primeng/components/tooltip/tooltip';
-import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos-pesquisa.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { HelloComponent } from './hello/hello.component';
+import { BemVindoComponent } from './bem-vindo/bem-vindo.component';
+import { FuncionarioCardComponent } from './funcionario-card/funcionario-card.component';
+import { FuncionarioFormComponent } from './funcionario-form/funcionario-form.component';
+import { CampoColoridoDirective } from './campo-colorido.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LancamentosPesquisaComponent,
-    NavbarComponent
+    HelloComponent,
+    BemVindoComponent,
+    FuncionarioCardComponent,
+    FuncionarioFormComponent,
+    CampoColoridoDirective
   ],
   imports: [
     BrowserModule,
-    InputTextModule,
-    ButtonModule,
-    TableModule,
-    TooltipModule
-
-
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
